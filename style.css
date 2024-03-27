@@ -6,23 +6,29 @@ html {
   body {
     font-family: "Cinzel Decorative", bold;
     text-align: center;
-    /* background-image: url("./img/background.jpeg"); */
   }
   
-  footer {
+  /* footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
     padding: 50px 0;
-  }
+  } */
 
   h1 {
     font-size: 4em;
   }
 
-  h2{
-    margin: 10px;
+  h2 {
+    font-size: 2em;
+    padding: 0 0 70px 0;
+  }
+
+  button{
+    margin: 100px;
+    font-family: "Cinzel Decorative";
+    font-size: 24px;
   }
 
   .highlighted-text {
@@ -30,4 +36,59 @@ html {
     display: inline-block;
     padding: 5px;
     margin: 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .memory-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .memory-card-test {
+   
+    perspective: 1000px;
+    position: relative;
+    display: flex;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: 0.5s ease;
+  }
+
+  .front-face, .back-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* transition: 0.5s ease; */
+    backface-visibility: hidden;
+    
+  }
+
+  .front-face {
+    
+    transform: rotateY(180deg);
+  }
+
+  .is-flipped .front-face {
+    transform: rotateY(-140deg);
+  }
+
+  .memory-card-test.is-flipped-test {
+    transform: rotateY(180deg);
+  }
+
+  .memory-card-inner {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 200px;
   }
