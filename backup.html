@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <!-- <style>
+    /* body {
+      font-family: 'Cinzel Decorative', bold;
+      text-align: center;
+    } */
+  </style> -->
+  <title>Memory Game Pop Culture Edition</title>
+</head>
+
+<body>
+  <div id="welcome-screen">
+    <header>
+      <div class="highlighted-text">
+        <h1>Memory Game</h1>
+    </header>
+
+    <main>
+      <h2>Pop Culture Edition</h2>
+      <div id="tile-placeholder"></div>
+      <button onclick="startGame()">Start Game</button>
+  </div>
+  <div id="game-screen" style="display: none;">
+    <div class="memory-board">
+      <div class="memory-card-test" data-framework="a">
+      <div class="memory-card-inner">
+        <div class="front-face"><img style="width:200px;height:200px;" src="./img/tile-tina.jpeg" alt="front"></div>
+        <div class="back-face"><img style="width:200px;height:200px;" src="./img/front-face-level-1.jpeg" alt="back"></div>
+        </div>
+      </div> 
+    <div class="memory-card-test" data-framework="a">
+      <div class="memory-card-inner">
+        <div class="front-face"><img style="width:200px;height:200px;" src="./img/tile-britney.jpeg" alt="front"></div>
+        <div class="back-face"><img style="width:200px;height:200px;" src="./img/front-face-level-1.jpeg" alt="back"></div>
+        </div>
+      </div> 
+    <div class="memory-card-test" data-framework="a">
+      <div class="memory-card-inner">
+        <div class="front-face"><img style="width:200px;height:200px;" src="./img/tile-cher.jpeg" alt="front"></div>
+        <div class="back-face"><img style="width:200px;height:200px;" src="./img/front-face-level-1.jpeg" alt="back"></div>
+        </div>
+      </div> 
+    <div class="memory-card-test" data-framework="a">
+      <div class="memory-card-inner">
+        <div class="front-face"><img style="width:200px;height:200px;" src="./img/tile-cher.jpeg" alt="front"></div>
+        <div class="back-face"><img style="width:200px;height:200px;" src="./img/front-face-level-1.jpeg" alt="back"></div>
+        </div>
+      </div> 
+    <div class="memory-card-test" data-framework="a">
+      <div class="memory-card-inner">
+        <div class="front-face"><img style="width:200px;height:200px;" src="./img/tile-gaga.jpeg" alt="front"></div>
+        <div class="back-face"><img style="width:200px;height:200px;" src="./img/front-face-level-1.jpeg" alt="back"></div>
+        </div>
+      </div> 
+    <div class="memory-card-test" data-framework="a">
+      <div class="memory-card-inner">
+        <div class="front-face"><img style="width:200px;height:200px;" src="./img/tile-gaga.jpeg" alt="front"></div>
+        <div class="back-face"><img style="width:200px;height:200px;" src="./img/front-face-level-1.jpeg" alt="back"></div>
+        </div>
+      </div> 
+    <div class="memory-card-test" data-framework="a">
+      <div class="memory-card-inner">
+        <div class="front-face"><img style="width:200px;height:200px;" src="./img/tile-nicki.jpeg" alt="front"></div>
+        <div class="back-face"><img style="width:200px;height:200px;" src="./img/front-face-level-1.jpeg" alt="back"></div>
+        </div>
+      </div> 
+    <div class="memory-card-test" data-framework="a">
+      <div class="memory-card-inner">
+        <div class="front-face"><img style="width:200px;height:200px;" src="./img/tile-nicki.jpeg" alt="front"></div>
+        <div class="back-face"><img style="width:200px;height:200px;" src="./img/front-face-level-1.jpeg" alt="back"></div>
+        </div>
+      </div> 
+    <div class="memory-card-test" data-framework="a">
+      <div class="memory-card-inner">
+        <div class="front-face"><img style="width:200px;height:200px;" src="./img/tile-tina.jpeg" alt="front"></div>
+        <div class="back-face"><img style="width:200px;height:200px;" src="./img/front-face-level-1.jpeg" alt="back"></div>
+        </div>
+      </div> 
+    <div class="memory-card-test" data-framework="a">
+      <div class="memory-card-inner">
+        <div class="front-face"><img style="width:200px;height:200px;" src="./img/tile-tina.jpeg" alt="front"></div>
+        <div class="back-face"><img style="width:200px;height:200px;" src="./img/front-face-level-1.jpeg" alt="back"></div>
+        </div>
+      </div> 
+    <div class="memory-card-test" data-framework="a">
+      <div class="memory-card-inner">
+        <div class="front-face"><img style="width:200px;height:200px;" src="./img/tile-whitney.jpeg" alt="front"></div>
+        <div class="back-face"><img style="width:200px;height:200px;" src="./img/front-face-level-1.jpeg" alt="back"></div>
+        </div>
+      </div> 
+      <div class="memory-card-test" data-framework="a">
+        <div class="memory-card-inner">
+          <div class="front-face"><img style="width:200px;height:200px;" src="./img/tile-whitney.jpeg" alt="front"></div>
+          <div class="back-face"><img style="width:200px;height:200px;" src="./img/front-face-level-1.jpeg" alt="back"></div>
+        </div>
+      </div>
+    </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

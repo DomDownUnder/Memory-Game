@@ -1,0 +1,10 @@
+.start-game {
+  appearance: button;
+  /* border: 1px solid blue; */
+  border-radius: 3px;
+  padding: 20px;
+  margin: 100px;
+  color: black;
+  background-color: lightgray;
+  text-decoration: none;
+}
