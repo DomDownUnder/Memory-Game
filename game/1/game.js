@@ -5,6 +5,12 @@ const pictureSrcs = [
   "/img/tile-nicki.jpeg",
   "/img/tile-tina.jpeg",
   "/img/tile-whitney.jpeg",
+  "/img/tile-alicia.jpeg",
+  "/img/tile-celine.jpeg",
+  "/img/tile-dolly.jpeg",
+  "/img/tile-janet.jpeg",
+  "/img/tile-kylie.jpeg",
+  "/img/tile-michelle.jpeg",
 ];
 
 // creates a deck with 2 copies of each card
@@ -14,7 +20,7 @@ for (let i = 0; i < pictureSrcs.length; i++) {
   deck.push(pictureSrcs[i]);
 }
 
-// Shuffle
+// Shuffle's the deck 50 times
 for (let i = 0; i < 50; i++) {
   let randomA = Math.random(); //creating a random number between 0 & 1
   randomA = randomA * deck.length; //turning the random number into between 0 & length
@@ -28,6 +34,7 @@ for (let i = 0; i < 50; i++) {
 // Renders every tile in the deck
 const gridElement = document.getElementById("grid");
 for (let i = 0; i < deck.length; i++) {
+  //Creating the Memory-Card class
   const memoryCardEl = document.createElement("div");
   memoryCardEl.className = "memory-card";
 
@@ -49,10 +56,19 @@ for (let i = 0; i < deck.length; i++) {
   gridElement.appendChild(memoryCardEl);
 }
 
+//
 let preventClick = false;
 let firstCard = null;
+let matchCount = 0;
+let maxMatchCount = 0;
 
 const cards = document.querySelectorAll(".memory-card-inner");
+const scoreCount = document.getElementById("match_count");
+const maxMatchCountEl = document.getElementById("max_match_count");
+
+maxMatchCount = cards.length / 2;
+maxMatchCount.innerText = maxMatchCount;
+
 cards.forEach((currentCard) => {
   currentCard.addEventListener("click", () => {
     console.log("click start", firstCard);
@@ -75,6 +91,10 @@ cards.forEach((currentCard) => {
           currentCard.dataset.keepOpen = true;
           firstCard.dataset.keepOpen = true;
           firstCard = null;
+          //The Match Count is being updated after every match that was made
+          matchCount = matchCount + 1;
+          //Get the Match Count Element and updating it inner text
+          scoreCount.innerText = matchCount;
         } else {
           preventClick = true;
           setTimeout(() => {
@@ -89,3 +109,9 @@ cards.forEach((currentCard) => {
     }
   });
 });
+
+function checkAllPairsFound() {
+  if (matchCount === maxMatchCount) {
+    removeMemoryCards();
+  }
+}

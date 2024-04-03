@@ -1,30 +1,22 @@
-.memory-board {
+/* .memory-board {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-}
+} */
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
-  height: 100vh;
-  /* padding: 100px; */
+  height: 90vh;
 }
 
 .memory-card {
   position: relative;
-  /* margin: 0px 0px 40px 50px; */
   max-width: 200px;
 }
-
-/* .memory-card-test {
-  position: relative;
-  margin: 0px 0px 40px 50px;
-  max-width: 200px;
-} */
 
 .front-face,
 .back-face {
@@ -50,4 +42,12 @@
   transition: 0.5s ease;
   width: 200px;
   height: 200px;
+}
+
+.match-count-container {
+  display: flex;
+  margin: 0 0 0 700px;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20%;
 }

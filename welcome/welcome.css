@@ -1,8 +1,28 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Cinzel Decorative", bold;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+  padding: 0 0 70px 0;
+}
+
 .start-game {
   appearance: button;
-  /* border: 1px solid blue; */
+  border: 1px solid black;
   border-radius: 3px;
-  padding: 20px;
+  padding: 15px;
   margin: 100px;
   color: black;
   background-color: lightgray;
