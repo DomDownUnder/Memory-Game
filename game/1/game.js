@@ -85,7 +85,9 @@ maxMatchCount = cards.length / 2;
 maxMatchCount.innerText = maxMatchCount;
 
 // Adding click event listeners to each Memory card
-cards.forEach((currentCard) => {
+
+for (let i = 0; i < cards.length; i++) {
+  const currentCard = cards[i];
   currentCard.addEventListener("click", () => {
     console.log("click start", firstCard);
     console.log("current card keep open", currentCard.dataset.keepOpen);
@@ -125,7 +127,7 @@ cards.forEach((currentCard) => {
       }
     }
   });
-});
+}
 
 function checkAllPairsFound() {
   if (matchCount === maxMatchCount) {
