@@ -14,6 +14,8 @@ const pictureSrcs = [
   "../../img/tile-michelle.jpeg",
 ];
 
+const timeToFlipCard = 1500; // milliseconds
+
 // Creates a deck with 2 copies of each card
 const deck = [];
 for (let i = 0; i < pictureSrcs.length; i++) {
@@ -122,7 +124,7 @@ for (let i = 0; i < cards.length; i++) {
             firstCard = null;
             preventClick = false;
             console.log("after timeout", firstCard);
-          }, 1500);
+          }, timeToFlipCard);
         }
       }
     }
@@ -131,7 +133,9 @@ for (let i = 0; i < cards.length; i++) {
 
 function checkAllPairsFound() {
   if (matchCount === maxMatchCount) {
-    removeMemoryCards();
+    setTimeout(() => {
+      removeMemoryCards();
+    }, timeToFlipCard);
   }
 }
 
