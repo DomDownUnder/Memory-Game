@@ -1,17 +1,17 @@
 // Array of image sources for the Memory game cards
 const pictureSrcs = [
-  "/img/tile-britney.jpeg",
-  "/img/tile-cher.jpeg",
-  "/img/tile-gaga.jpeg",
-  "/img/tile-nicki.jpeg",
-  "/img/tile-tina.jpeg",
-  "/img/tile-whitney.jpeg",
-  "/img/tile-alicia.jpeg",
-  "/img/tile-celine.jpeg",
-  "/img/tile-dolly.jpeg",
-  "/img/tile-janet.jpeg",
-  "/img/tile-kylie.jpeg",
-  "/img/tile-michelle.jpeg",
+  "../../img/tile-britney.jpeg",
+  "../../img/tile-cher.jpeg",
+  "../../img/tile-gaga.jpeg",
+  "../../img/tile-nicki.jpeg",
+  "../../img/tile-tina.jpeg",
+  "../../img/tile-whitney.jpeg",
+  "../../img/tile-alicia.jpeg",
+  "../../img/tile-celine.jpeg",
+  "../../img/tile-dolly.jpeg",
+  "../../img/tile-janet.jpeg",
+  "../../img/tile-kylie.jpeg",
+  "../../img/tile-michelle.jpeg",
 ];
 
 // Creates a deck with 2 copies of each card
@@ -51,7 +51,7 @@ for (let i = 0; i < deck.length; i++) {
 
   // Creating an image element for the back face of the card
   const backFaceElement = document.createElement("img");
-  backFaceElement.setAttribute("src", "/img/tile-microphone.jpeg");
+  backFaceElement.setAttribute("src", "../../img/tile-microphone.jpeg");
   backFaceElement.className = "back-face";
 
   // Appending the back face and front face elements to the memory card inner div
