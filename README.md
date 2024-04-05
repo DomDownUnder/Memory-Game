@@ -1,10 +1,13 @@
-# Dom's Wordle
+# Dom's Memory Card Game
 
 ## Game rules
 
-• The grid has 4 rows and 3 columns in the first round, which means you have to find 6 matches to advance to the next level. • You click on one of the squares which then will turn around and reveal a picture. Now you have to click on another square, which will turn around and reveal the same or another picture. • After each guess, the grid will display the pictures in different colors. If a match was made, the two pictures will appear in a green frame, and if you reveal two different pictures, they will appear in a red frame and flip back face down. • After finishing the first round of finding 6 matches, the challenge to gets harder, and 10 matches need to be find. • Each match gives you 10 points. The points from all levels you finish will be added together.
-
-
+• On the welcome screen you have to press the "Start Game" button to start the game.
+• The grid has 4 rows and 6 columns, which means you have to find 12 matches to win the game.
+• You click on one of the squares cards which then will turn around and reveal the face of a singer. Now you have to click on another card, which will turn around and reveal either the same or another singer.
+• After each guess, the grid will keep the two pictures revealed, if you found a match. If your two chosen cards don't match they will flip back around after a short time.
+• There is a match count, which tells you how many matches you found so far.
+• If you made 12 matches you won the game.
 
 ## User stories
 
