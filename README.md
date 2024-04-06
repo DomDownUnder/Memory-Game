@@ -39,7 +39,7 @@ The first Memory Game in today's form was published by the German company Ravens
 
 ## Technologies used
 
-In the development of this game, I used HTML, CSS and JavaScript. I used each of these technologies twice - one set of HTML, CSS and JavaScript for the welcome screen and the second set for the game screen.
+In the development of this game, I used • HTML, • CSS and • JavaScript. I used each of these technologies twice - one set of HTML, CSS and JavaScript for the welcome screen and the second set for the game screen.
 
 ## Getting started
 
