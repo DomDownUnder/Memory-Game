@@ -10,6 +10,11 @@ The Memory card game displays 24 cards that all have the same look at the beginn
 
 ## Screenshots of the actual game
 
+![Alt text](/readme-img/welcome-screenshot.png)
+![Alt text](</readme-img/game-screenshot(1).png)
+![Alt text](</readme-img/game-screenshot(2).png)
+![Alt text](/readme-img/congratulation-screenshot.png)
+
 ## Background info
 
 The first Memory Game in today's form was published by the German company Ravensburger in February 1959. Back in the 16th century, Japan had versions of this game in form of matching pictures painted on shells. (Source: https://board-games.fandom.com/wiki/Memory#:~:text=First%20published%20in%20today's%20form,Pairs%2C%20Pelmanism%2C%20or%20Concentration.)
