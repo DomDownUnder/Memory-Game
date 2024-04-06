@@ -11,8 +11,8 @@ The Memory card game displays 24 cards that all have the same look at the beginn
 ## Screenshots of the actual game
 
 ![Alt text](/readme-img/welcome-screenshot.png)
-![Alt text](</readme-img/game-screenshot(1).png)
-![Alt text](</readme-img/game-screenshot(2).png)
+![Alt text](</readme-img/game-screenshot(1).png>)
+![Alt text](</readme-img/game-screenshot(2).png>)
 ![Alt text](/readme-img/congratulation-screenshot.png)
 
 ## Background info
