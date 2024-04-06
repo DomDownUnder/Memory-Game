@@ -2,7 +2,7 @@
 
 ## Wireframe
 
-![Alt text] (/readme-img/wireframe-memory.png)
+![Alt text](/readme-img/wireframe-memory.png)
 
 ## Description of the game
 
